@@ -1,4 +1,4 @@
-Simple utility for patching the original `debugserver` which comes with XCode in include entitlements
+Simple utility for patching the original `debugserver` which comes with XCode to include entitlements
 for debugging other processes in a jailbroken device.
 
 The binary can be obtained from:
