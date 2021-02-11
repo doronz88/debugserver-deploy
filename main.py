@@ -25,7 +25,7 @@ def main(debugserver, output):
         return
 
     if 0 != os.system(f'ldid -S{ENTITLEMENTS} {output}'):
-        print('failed lipo execution. verify its installed and in path')
+        print('failed ldid execution. verify its installed and in path')
         return
 
     print('Done. 🍺')
