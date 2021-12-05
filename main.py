@@ -24,8 +24,8 @@ def main(debugserver, output):
         print('failed lipo execution. verify its installed and in path')
         return
 
-    if 0 != os.system(f'ldid -S{ENTITLEMENTS} {output}'):
-        print('failed ldid execution. verify its installed and in path')
+    if 0 != os.system(f'codesign -s - --entitlements {ENTITLEMENTS} -f --generate-entitlement-der {output}'):
+        print('failed codesign execution. verify its installed and in path')
         return
 
     print('Done. 🍺')

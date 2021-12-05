@@ -28,5 +28,9 @@
 	<true/>
 	<key>task_for_pid-allow</key>
 	<true/>
+	<key>dynamic-codesigning</key>
+	<true/>
+	<key>com.apple.private.cs.debugger</key>
+	<true/>
 </dict>
 </plist>
